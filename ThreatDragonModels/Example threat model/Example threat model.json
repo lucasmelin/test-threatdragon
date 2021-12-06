@@ -1,0 +1,17 @@
+{
+  "summary": {
+    "title": "Example threat model",
+    "owner": "Lucas Melin"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "Example diagram",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Tuncer Yukler"
+  }
+}

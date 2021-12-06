@@ -9,7 +9,267 @@
       {
         "title": "Example diagram",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 153,
+                "y": 78
+              },
+              "angle": 0,
+              "id": "28703760-023f-436b-9749-8bd846355fda",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Browser"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 442,
+                "y": 266
+              },
+              "angle": 0,
+              "id": "d155004d-4eb4-4649-9921-2e34b788ca52",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "GitHub.com"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 178,
+                "y": 354
+              },
+              "target": {
+                "x": 553,
+                "y": 181
+              },
+              "vertices": [
+                {
+                  "x": 371,
+                  "y": 229
+                }
+              ],
+              "id": "1d9010ae-4c2e-48b0-b0c7-04d4b0e5f976",
+              "z": 3,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "28703760-023f-436b-9749-8bd846355fda"
+              },
+              "target": {
+                "id": "d155004d-4eb4-4649-9921-2e34b788ca52"
+              },
+              "vertices": [
+                {
+                  "x": 420,
+                  "y": 133
+                }
+              ],
+              "id": "c8a30db6-b4a5-4c3b-988c-36ec7645bccb",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Web Request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 4,
+              "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "isEncrypted": true,
+              "protocol": "HTTPS",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 539,
+                "y": 462
+              },
+              "angle": 0,
+              "id": "24914690-8a47-4729-a338-50062a176501",
+              "z": 5,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "storesCredentials": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "GitHub Secrets"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "d155004d-4eb4-4649-9921-2e34b788ca52"
+              },
+              "target": {
+                "x": 632,
+                "y": 459
+              },
+              "vertices": [
+                {
+                  "x": 613,
+                  "y": 374
+                }
+              ],
+              "id": "d0953b14-5e27-4b62-ad06-8b97c319bfe4",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.6480729002890828,
+                    "offset": -3.244235158886966
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Queries",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 6,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 342,
+                "y": 532
+              },
+              "target": {
+                "x": 772,
+                "y": 445
+              },
+              "vertices": [
+                {
+                  "x": 544,
+                  "y": 427
+                },
+                {
+                  "x": 705,
+                  "y": 425
+                }
+              ],
+              "id": "5d2b4955-775e-4008-8cc8-f355f579466b",
+              "z": 7,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "24914690-8a47-4729-a338-50062a176501"
+              },
+              "target": {
+                "id": "d155004d-4eb4-4649-9921-2e34b788ca52"
+              },
+              "vertices": [
+                {
+                  "x": 527,
+                  "y": 416
+                }
+              ],
+              "id": "a90d43b7-76cf-45e5-bc68-2868ea1eeb17",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "GitHub Secrets Query",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 8,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 1383
+        }
       }
     ],
     "reviewer": "Tuncer Yukler"
